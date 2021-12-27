@@ -83,24 +83,15 @@ import java.net.*;
 import javax.crypto.Cipher;
 
 public class Blockchain {
-
     static private PrivateKey privateKey;
-  
     private static String FILENAME;
-
-    private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-   
+    private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";   
     public static String serverName = "localhost";
-  
     public static final String ALGORITHM = "RSA";
     static int NUMPROCESSES = 3;
- 
     public static int PID;
-
     public static LinkedList<BlockRecord> BLOCKCHAIN = new LinkedList<>();
-
     public static LinkedList<BlockRecord> RECORDLIST = new LinkedList<>();
- 
     public static List<keyFactory> KEYLIST = new ArrayList<>();
 
     public static Comparator<BlockRecord> BlockTSComparator = new Comparator<BlockRecord>(){
@@ -168,7 +159,6 @@ public class Blockchain {
         SecureRandom rng = SecureRandom.getInstance("SHA1PRNG", "SUN");
         rng.setSeed(seed);
         keyGenerator.initialize(1024, rng);
-
         return (keyGenerator.generateKeyPair());
     }
 
@@ -332,7 +322,6 @@ class Ports {
     public static int KeyServerPortBase = 4710;
     public static int UnverifiedBlockServerPortBase = 4820;
     public static int BlockchainServerPortBase = 4930;
-
     public static int KeyServerPort;
     public static int UnverifiedBlockServerPort;
     public static int BlockchainServerPort;
