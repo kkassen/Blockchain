@@ -4,7 +4,7 @@
 
 2. Java version:
 
-C:\Users\IQ1006\JavaPrograms\CSC435\Blockchain>java -version
+C:\Users\IQ1006\JavaPrograms\Blockchain>java -version
 openjdk version "11.0.4" 2019-07-16 LTS
 OpenJDK Runtime Environment Corretto-11.0.4.11.1 (build 11.0.4+11-LTS)
 OpenJDK 64-Bit Server VM Corretto-11.0.4.11.1 (build 11.0.4+11-LTS, mixed mode)
